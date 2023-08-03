@@ -30,4 +30,40 @@ export default function DropdownShareButton() {
     const handleClose = () => {
       setAnchorEl(null);
     };
+
+    // Function to handle sharing the workout on social media platforms or copying the link
+  const handleShare = (e) => {
+    e.preventDefault();
+
+    // Get the current page URL and encode it for use in social media share links
+    const ahref = window.location.href;
+    const encodedAhref = encodeURIComponent(ahref);
+    var link;
+
+    // Create the share link based on the clicked social media platform
+    switch (e.currentTarget.id) {
+      case "facebook":
+        link = `https://www.facebook.com/sharer/sharer.php?u=${ahref}`;
+        open(link);
+        break;
+
+      case "twitter":
+        link = `https://twitter.com/intent/tweet?url=${encodedAhref}`;
+        open(link);
+        break;
+
+      case "reddit":
+        link = `https://www.reddit.com/submit?url=${encodedAhref}`;
+        open(link);
+        break;
+
+      case "copy":
+        // Copy the URL to the clipboard
+        navigator.clipboard.writeText(ahref);
+        break;
+
+      default:
+        break;
+    }
+  };
   
