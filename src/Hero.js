@@ -18,7 +18,7 @@ function Hero() {
 
      // useEffect hook to fetch exercises when the component mounts
   useEffect(() => {
-    getExercises();
+    // getExercises();
   }, );
   
   // Function to handle button click to generate workouts
