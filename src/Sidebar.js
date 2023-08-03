@@ -11,7 +11,7 @@ const Sidebar = () => {
   return shouldShowSidebar() ? (
     <div className="sidebar">
       <div className="side fitness">
-        <Link to="/fitness">Fitness</Link>
+        <Link to="/hero">Fitness</Link>
       </div>
       <div className="side nutrition">
         <Link to="/fittype">Nutrition</Link>
