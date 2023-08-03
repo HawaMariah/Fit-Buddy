@@ -16,3 +16,13 @@ function WorkoutCard({ workOutCard }) {
     const workoutsPerPage = 3;
     const totalWorkouts = workOutCard.length;
     const totalPages = Math.ceil(totalWorkouts / workoutsPerPage);
+
+     // Function to handle the previous page button click
+  const handlePrevClick = () => {
+    setPage(prevPage => prevPage - 1);
+  };
+
+  // Function to handle the next page button click
+  const handleNextClick = () => {
+    setPage(prevPage => prevPage + 1);
+  };
