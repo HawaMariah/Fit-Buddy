@@ -26,3 +26,13 @@ function Hero() {
     event.preventDefault();
     getWorkOuts(bodyPart, muscleType, equipment);
   }
+
+   // Function to fetch exercises data from the API
+   function getExercises() {
+    const exerciseOptions = {
+      method: "GET",
+      headers: {
+        'X-RapidAPI-Key': '5923753061msh596e55cd59ef3b9p1865e7jsn90da2ddb36ab',
+        'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+      },
+    };
