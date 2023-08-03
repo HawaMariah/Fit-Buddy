@@ -1,0 +1,51 @@
+.Header-containerf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px; /
+    / background-color: #ccc; */
+   
+
+  }
+.span-f{
+    color:rgb(8, 140, 223);
+}
+
+  .content-containerf {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 80px;
+  }
+  .btn-f{
+        width: 150px;
+        height: 50px;
+        background-color: navy;
+        color: whitesmoke;
+        font-size: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+  }
+ 
+  .h1fit-f {
+    margin: 0;
+
+  }
+  .h3-f{
+    font-size: 40px;
+  }
+
+  .image-containerf {
+    flex: 1;
+    text-align: right;
+  }
+
+  .Header-imagef {
+    width: 100%; 
+    height: 800px;
+    border-radius: 10px 10px 10px 10px; 
+  }
+  .p1-f{
+    font-weight: 900;
+  }
