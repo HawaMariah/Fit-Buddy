@@ -17,7 +17,11 @@ const Header = () => {
           {/* Heading 3 with class name "h3-f" */}
           <h3 className="h3-f">Your Ultimate Fitness<br /> And Nutrition Companion</h3>
           {/* Paragraph with class name "p-f" */}
-          <p className="p-f">Explore Fitness! Discover Your Workout Journey.</p>
+          <p className="p-f">Explore Fitness! Discover Your Workout Journey.</p><br/><br/><br/><br/>
+
+
+         <br/><br/><br/><br/>
+         <h4 className="p1-f">Exercises To Keep You Fit🦾</h4>
         </div>
   
         {/* Inner div with a class name "image-containerf" */}
