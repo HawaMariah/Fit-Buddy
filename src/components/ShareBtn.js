@@ -8,3 +8,9 @@ import {
   Button,
   Menu,
 } from "@mui/material";
+
+// Import Material-UI icons for social media platforms
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import RedditIcon from '@mui/icons-material/Reddit';
+import LinkIcon from '@mui/icons-material/Link';
