@@ -70,3 +70,37 @@ function Hero() {
       );
     }
   }
+
+   // Return the JSX code for rendering the Hero component
+   return (
+    <div className='Hero'>
+      {/* Render the Header component */}
+      <Header />
+      <Box m={2} />
+
+      {/* Container for user inputs */}
+      <Container maxWidth="sm">
+        <Paper variant="outlined" sx={{ padding: 1 }}>
+          <Stack spacing={1}>
+            {/* UserInput component for Body Part selection */}
+            <UserInput className="BP" bodyPartDD={bodyPartDD} setBodyPart={setBodyPart} bodyPart={bodyPart} label='Body Part' />
+            {/* UserInput component for Muscle Type selection */}
+            <UserInput className="MT" bodyPartDD={muscleTypeDD} setBodyPart={setMuscleType} bodyPart={muscleType} label='Muscle Type' />
+            {/* UserInput component for Equipment selection */}
+            <UserInput className="EQ" bodyPartDD={equipmentDD} setBodyPart={setEquipment} bodyPart={equipment} label='Equipment' />
+            {/* Button to generate workouts */}
+            <Button variant="contained" onClick={handleClick}>Generate Workouts</Button>
+          </Stack>
+        </Paper>
+      </Container>
+
+      {/* Container for rendering workout cards */}
+      <Container>
+        <WorkoutCard workOutCard={workOutCard} />
+      </Container>
+    </div>
+  );
+}
+
+// Export the Hero component to use it in other parts of the Herolication
+export default Hero;
