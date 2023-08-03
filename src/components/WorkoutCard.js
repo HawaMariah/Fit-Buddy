@@ -8,3 +8,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ShareBtn from "./ShareBtn";
 import LearnMore from "./LearnMore";
+
+// Define the functional component named WorkoutCard
+function WorkoutCard({ workOutCard }) {
+    // State variables to manage pagination
+    const [page, setPage] = useState(1);
+    const workoutsPerPage = 3;
+    const totalWorkouts = workOutCard.length;
+    const totalPages = Math.ceil(totalWorkouts / workoutsPerPage);
