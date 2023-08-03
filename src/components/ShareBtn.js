@@ -66,4 +66,78 @@ export default function DropdownShareButton() {
         break;
     }
   };
+
+   // Function to open a social media link in a new tab or window
+   const open = (socialLink) => {
+    window.open(socialLink, "_blank");
+  };
+
+  // Return the JSX code for the component
+  return (
+    <>
+      {/* Share Workout button */}
+      <Button
+        id='demo-positioned-button'
+        aria-controls={open ? "demo-positioned-menu" : undefined}
+        aria-haspopup='true'
+        aria-expanded={open ? "true" : undefined}
+        onClick={handleClick}
+      >
+        Share Workout
+      </Button>
+
+      {/* Share Workout menu */}
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        anchorEl={anchorEl}
+        open={openBtn}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+      >
+        <MenuList dense={true}>
+          {/* Menu item for sharing on Facebook */}
+          <MenuItem button id='facebook' onClick={handleShare}>
+            <ListItemIcon>
+              <FacebookIcon />
+            </ListItemIcon>
+            <ListItemText primary='Facebook' />
+          </MenuItem>
+
+          {/* Menu item for sharing on Twitter */}
+          <MenuItem button id='twitter' onClick={handleShare}>
+            <ListItemIcon>
+              <TwitterIcon />
+            </ListItemIcon>
+            <ListItemText primary='Twitter' />
+          </MenuItem>
+
+          {/* Menu item for sharing on Reddit */}
+          <MenuItem button id='reddit' onClick={handleShare}>
+            <ListItemIcon>
+              <RedditIcon />
+            </ListItemIcon>
+            <ListItemText primary='Reddit' />
+          </MenuItem>
+
+          {/* Menu item for copying the link */}
+          <MenuItem button id='copy' onClick={handleShare}>
+            <ListItemIcon>
+              <LinkIcon />
+            </ListItemIcon>
+            <ListItemText primary='Copy Link' />
+          </MenuItem>
+        </MenuList>
+      </Menu>
+    </>
+  );
+}
+
   
