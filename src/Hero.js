@@ -21,3 +21,8 @@ function Hero() {
     getExercises();
   }, );
   
+  // Function to handle button click to generate workouts
+  const handleClick = (event) => {
+    event.preventDefault();
+    getWorkOuts(bodyPart, muscleType, equipment);
+  }
