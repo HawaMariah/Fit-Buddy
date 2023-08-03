@@ -1,15 +1,26 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
-  return (
+  const location = useLocation();
+
+  const showSidebarPaths = ["/"];
+
+  const shouldShowSidebar = () => showSidebarPaths.includes(location.pathname);
+
+  return shouldShowSidebar() ? (
     <div className="sidebar">
-      <div className="side fitness"><span>Fitness</span></div>
-      <div className="side nutrition"><span>Nutrition</span></div>
-      <div className="side article"><span>Article</span></div>
+      <div className="side fitness">
+        <Link to="/fitness">Fitness</Link>
+      </div>
+      <div className="side nutrition">
+        <Link to="/nutrition">Nutrition</Link>
+      </div>
+      <div className="side article">
+        <Link to="/article">Article</Link>
+      </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Sidebar;
-
-
