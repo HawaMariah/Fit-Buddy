@@ -33,3 +33,6 @@ const Header = () => {
       
     );
   };
+
+  // Export the Header component so it can be used in other parts of the application
+export default Header;
