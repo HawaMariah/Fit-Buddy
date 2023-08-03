@@ -36,3 +36,21 @@ function Hero() {
         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
       },
     };
+
+    fetch("https://exercisedb.p.rapidapi.com/exercises", exerciseOptions)
+    .then((response) => response.json())
+    .then((response) => {
+      setWorkOuts(response);
+      // Update the sets for dropdown options
+      for (let i = 0; i < response.length; i++) {
+        let currentItem = response[i];
+        bodyPartDD.add(currentItem.bodyPart);
+        muscleTypeDD.add(currentItem.target);
+        equipmentDD.add(currentItem.equipment);
+      }
+      setBodyPartDD(new Set(bodyPartDD));
+      setMuscleTypeDD(new Set(muscleTypeDD));
+      setEquipmentDD(new Set(equipmentDD));
+    })
+    .catch((err) => console.error(err));
+}
