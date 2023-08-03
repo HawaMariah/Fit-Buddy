@@ -14,7 +14,7 @@ const Sidebar = () => {
         <Link to="/fitness">Fitness</Link>
       </div>
       <div className="side nutrition">
-        <Link to="/nutrition">Nutrition</Link>
+        <Link to="/fittype">Nutrition</Link>
       </div>
       <div className="side article">
         <Link to="/article">Article</Link>
