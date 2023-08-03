@@ -54,3 +54,19 @@ function Hero() {
     })
     .catch((err) => console.error(err));
 }
+
+ // Function to handle filtering
+ function getWorkOuts(bodyPart, muscleType, equipment) {
+    const filteredWorkOuts = workOuts.filter(
+      exercise => exercise.bodyPart === bodyPart && exercise.target === muscleType && exercise.equipment === equipment
+    );
+    if (filteredWorkOuts.length > 0) {
+      setWorkOutCard(filteredWorkOuts);
+    } else {
+      setWorkOutCard(
+        workOuts.filter(
+          exercise => exercise.bodyPart === bodyPart || exercise.target === muscleType || exercise.equipment === equipment
+        )
+      );
+    }
+  }
