@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import YouTubeVideo from './YouTubeVideo';
+import React from 'react';
+import SelectFitType from './SelectFitType';
 
 function App() {
+  function handleClick() {
+    // Replace the URL below with the desired URL you want to redirect to
+    const desiredURL = 'https://www.healthline.com/nutrition';
+    window.location.href = desiredURL;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='fit'>
+        <h1 id="topic">fitnutrition</h1>
+        <p onClick={handleClick} id='aboutme'>More on nutrition</p>
+      </div>
+      <YouTubeVideo/>
+      <SelectFitType/>
+      <div className='fitFooter'>
+         <p id="abouted" style={{color:"whitesmoke"}} onClick={handleClick}>About</p>
+      </div>  
     </div>
   );
 }
