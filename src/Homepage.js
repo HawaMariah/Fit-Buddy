@@ -18,7 +18,9 @@ const Homepage = () => {
       <div className="home-top">
         <div className="image-container">
           <div className="image-hover-effect">
+            <div className="image-wrapper">
             <img className="image" src={myImage} alt="Home" />
+            </div>
             <div className="hover-text">
               Get Fitty
               <br />
