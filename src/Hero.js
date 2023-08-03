@@ -15,4 +15,9 @@ function Hero() {
     const [workOutCard, setWorkOutCard] = useState([]);
     const [equipmentDD, setEquipmentDD] = useState(new Set());
     const [equipment, setEquipment] = useState('');
+
+     // useEffect hook to fetch exercises when the component mounts
+  useEffect(() => {
+    getExercises();
+  }, );
   
