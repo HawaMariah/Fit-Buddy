@@ -10,7 +10,7 @@ const Homepage = () => {
     "https://www.youtube.com/watch?v=LCyECbA3pUw&ab_channel=JeremyEthier",
     "https://www.youtube.com/watch?v=ruX4Le0kBng&ab_channel=Muscle%26Brawn",
     "https://www.youtube.com/watch?v=bTo4NrSriWw&ab_channel=TRAINWITHGAINSBYBRAINS",
-  "https://www.youtube.com/watch?v=g47n-5DJcwo&ab_channel=NoCopyrightSoundFans",
+    "https://www.youtube.com/watch?v=g47n-5DJcwo&ab_channel=NoCopyrightSoundFans",
   ];
 
   return (
@@ -19,7 +19,7 @@ const Homepage = () => {
         <div className="image-container">
           <div className="image-hover-effect">
             <div className="image-wrapper">
-            <img className="image" src={myImage} alt="Home" />
+              <img className="image" src={myImage} alt="Home" />
             </div>
             <div className="hover-text">
               Get Fitty
@@ -69,7 +69,15 @@ const Homepage = () => {
         </div>
         {/* End of Flip Box */}
       </div>
-
+     
+      <div className="state">
+        <p className="statement bordered">
+          Apart from physical workout, never forget about your  mental health, 
+          <br />
+        
+          MEDITATION AND YOGA KEEPS YOU ZEN 
+        </p>
+      </div>
       <div className="videos-container">
         {videoUrls.map((url, index) => (
           <YouTubeVideo key={index} videoUrl={url} />

@@ -663,3 +663,23 @@ color: #fff;
   text-align: center;
   margin-top: 20px;
 }
+/* YourComponent.css */
+
+.statement {
+ 
+  font-size: 1cm;
+  font-weight: bolder;
+  color: #fff;
+  margin: 20px 0;
+  /* Add any other styles you want */
+}
+.state{
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+.bordered {
+  border: 2px solid #e9e5e5;
+  padding: 10px;
+  
+}

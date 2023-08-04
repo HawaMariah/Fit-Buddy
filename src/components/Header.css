@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    
+    padding-left: 3cm;
 
   }
 .span-f{
@@ -30,11 +30,13 @@
   }
  
   .h1fit-f {
+    color: #fff;
     margin: 0;
 
   }
   .h3-f{
     font-size: 40px;
+    color: #fff;
   }
 
   .image-containerf {
@@ -49,8 +51,12 @@
     height: 800px;
     border-radius: 10px 10px 10px 10px; 
   }
+  .p-f{
+    font-size: 30px;
+    color: #fff;
+  }
   .p1-f{
-    font-weight: 900;
+    color: #fff;
   }
   /* Header.css */
 .go-back-button {

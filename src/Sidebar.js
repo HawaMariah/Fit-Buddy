@@ -17,7 +17,7 @@ const Sidebar = () => {
         <Link to="/fittype">Nutrition</Link>
       </div>
       <div className="side article">
-        <Link to="/article">Article</Link>
+        <Link to="/articles">Articles</Link>
       </div>
     </div>
   ) : null;

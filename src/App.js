@@ -9,6 +9,7 @@ import "./App.css";
 import SelectFitType from "./SelectFitType";
 import Hero from "./Hero";
 import Footer from "./Footer";
+import Articles from "./Articles";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/signup" element={<Signup />} />
             <Route exact path="/fittype" element={<SelectFitType />} />
             <Route exact path="/hero"   element={ <Hero/>}/>
+         <Route exact path="/articles" element={<Articles/>}/>
           </Routes>
         </div>
         <Footer />
