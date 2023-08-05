@@ -32,10 +32,10 @@ const Homepage = () => {
         </div>
         {/* Flip Box */}
         <div className="flip-box-container">
-          <div class="flip-bx">
-            <div class="front">
-              <div class="inner">
-                <div class="media">
+          <div className="flip-bx">
+            <div className="front">
+              <div className="inner">
+                <div className="media">
                   <p>
                     Discover a variety of engaging workout routines: cardio,
                     yoga, and more...With detailed instructions and video
@@ -48,12 +48,12 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
-                <div class="content">
-                  <span class="name">FitBuddy</span>
+            <div className="back">
+              <div className="inner">
+                <div className="content">
+                  <span className="name">FitBuddy</span>
                   <br />
-                  <span class="position">
+                  <span className="position">
                     Ultimate fitness
                     <br />
                     <br />
@@ -69,13 +69,12 @@ const Homepage = () => {
         </div>
         {/* End of Flip Box */}
       </div>
-     
+
       <div className="state">
         <p className="statement bordered">
-          Apart from physical workout, never forget about your  mental health, 
+          Apart from physical workout, never forget about your mental health,
           <br />
-        
-          MEDITATION AND YOGA KEEPS YOU ZEN 
+          MEDITATION AND YOGA KEEPS YOU ZEN
         </p>
       </div>
       <div className="videos-container">
