@@ -1,4 +1,4 @@
-import { Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -13,25 +13,20 @@ import Articles from "./Articles";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Sidebar />
-        <div>
-          <Routes>
-            <Route exact path="/" element={<Homepage />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/signup" element={<Signup />} />
-            <Route exact path="/fittype" element={<SelectFitType />} />
-            <Route exact path="/hero"   element={ <Hero/>}/>
-         <Route exact path="/articles" element={<Articles/>}/>
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/fittype" element={<SelectFitType />} />
+        <Route exact path="/hero" element={<Hero />} />
+        <Route exact path="/articles" element={<Articles />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
 export default App;
-/* CSS */
