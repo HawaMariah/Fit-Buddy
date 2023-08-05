@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Fit-Buddy/precache-manifest.0f2267bce89a323e51e33488be16d03a.js"
+  "/Fit-Buddy/precache-manifest.f893de060674046548cf3bdffd4914e1.js"
 );
 
 workbox.clientsClaim();
