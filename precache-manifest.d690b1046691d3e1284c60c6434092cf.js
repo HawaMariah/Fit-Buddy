@@ -24,20 +24,20 @@ self.__precacheManifest = [
     "url": "/Fit-Buddy/static/media/fa-brands-400.005c9aa9.woff2"
   },
   {
-    "revision": "675809e48e35c47d51c7d6fcc687ee28",
-    "url": "/Fit-Buddy/static/media/fa-regular-400.675809e4.ttf"
-  },
-  {
-    "revision": "bb8cd014d7a55672934233c354e1c4a3",
-    "url": "/Fit-Buddy/static/media/fa-brands-400.bb8cd014.ttf"
-  },
-  {
     "revision": "747442fa76f1d9a31f9a54a2e8a4b448",
     "url": "/Fit-Buddy/static/media/fa-regular-400.747442fa.woff2"
   },
   {
+    "revision": "675809e48e35c47d51c7d6fcc687ee28",
+    "url": "/Fit-Buddy/static/media/fa-regular-400.675809e4.ttf"
+  },
+  {
     "revision": "d5e647388e2415268b700d3df2e30a0d",
     "url": "/Fit-Buddy/static/media/fa-solid-900.d5e64738.woff2"
+  },
+  {
+    "revision": "bb8cd014d7a55672934233c354e1c4a3",
+    "url": "/Fit-Buddy/static/media/fa-brands-400.bb8cd014.ttf"
   },
   {
     "revision": "f20773a753bf1fbe9ccec04f90a470ea",
