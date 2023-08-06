@@ -1,5 +1,5 @@
 import React from "react";
-
+import myImage from "../images/workoutt.jpg";
 import "./Header.css";
 
 // Create a functional component named Header
@@ -42,11 +42,7 @@ const Header = () => {
         {/* Inner div with a class name "image-containerf" */}
         <div className="image-containerf">
           {/* Image tag with source "../Assets/workoutt.jpg", alt text "logo", and class name "Header-imagef" */}
-          <img
-            src="../Assets/workoutt.jpg"
-            alt="logo"
-            className="Header-imagef"
-          />
+          <img src={myImage} alt="logo" className="Header-imagef" />
         </div>
       </div>
     </div>

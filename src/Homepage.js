@@ -74,7 +74,7 @@ const Homepage = () => {
         <p className="statement bordered">
           Apart from physical workout, never forget about your mental health,
           <br />
-          MEDITATION AND YOGA KEEPS YOU ZEN
+          <i>MEDITATION AND YOGA KEEPS YOU ZEN</i>
         </p>
       </div>
       <div className="videos-container">

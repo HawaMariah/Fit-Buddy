@@ -672,7 +672,7 @@ color: #fff;
   font-weight: bolder;
   color: #fff;
   margin: 20px 0;
-  /* Add any other styles you want */
+ 
 }
 .state{
   width: 100%;
@@ -683,4 +683,52 @@ color: #fff;
   border: 2px solid #e9e5e5;
   padding: 10px;
   
+}
+ .articles-container {
+ 
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.articles-container p {
+  
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.article-link{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #151516;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.article-link:hover {
+  background-color: #45484b;
+}
+.articles{
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
