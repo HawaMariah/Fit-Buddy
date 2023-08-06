@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+
+  useEffect(() => {
+    if (showSuccessAlert) {
+      window.location.href = "/";
+    }
+  }, [showSuccessAlert]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +28,7 @@ const Login = () => {
         text: "You have successfully logged in.",
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = "/";
+          setShowSuccessAlert(true);
         }
       });
 

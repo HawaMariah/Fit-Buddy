@@ -10,28 +10,28 @@ import {
 } from "@mui/material";
 
 // Import Material-UI icons for social media platforms
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import RedditIcon from '@mui/icons-material/Reddit';
-import LinkIcon from '@mui/icons-material/Link';
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import RedditIcon from "@mui/icons-material/Reddit";
+import LinkIcon from "@mui/icons-material/Link";
 
-// Define the functional component named DropdownShareButton
-export default function DropdownShareButton() {
-    // Declare state variables for managing the menu's anchor element and its open state
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const openBtn = Boolean(anchorEl);
-  
-    // Function to handle opening the menu
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    // Function to handle closing the menu
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
+// Define the functional component named ShareBtn
+export default function ShareBtn() {
+  // Declare state variables for managing the menu's anchor element and its open state
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const openBtn = Boolean(anchorEl);
 
-    // Function to handle sharing the workout on social media platforms or copying the link
+  // Function to handle opening the menu
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  // Function to handle closing the menu
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  // Function to handle sharing the workout on social media platforms or copying the link
   const handleShare = (e) => {
     e.preventDefault();
 
@@ -67,8 +67,8 @@ export default function DropdownShareButton() {
     }
   };
 
-   // Function to open a social media link in a new tab or window
-   const open = (socialLink) => {
+  // Function to open a social media link in a new tab or window
+  const open = (socialLink) => {
     window.open(socialLink, "_blank");
   };
 
@@ -77,9 +77,9 @@ export default function DropdownShareButton() {
     <>
       {/* Share Workout button */}
       <Button
-        id='demo-positioned-button'
+        id="demo-positioned-button"
         aria-controls={open ? "demo-positioned-menu" : undefined}
-        aria-haspopup='true'
+        aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
@@ -94,50 +94,48 @@ export default function DropdownShareButton() {
         open={openBtn}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: "top",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: "top",
+          horizontal: "left",
         }}
       >
         <MenuList dense={true}>
           {/* Menu item for sharing on Facebook */}
-          <MenuItem button id='facebook' onClick={handleShare}>
+          <MenuItem button id="facebook" onClick={handleShare}>
             <ListItemIcon>
               <FacebookIcon />
             </ListItemIcon>
-            <ListItemText primary='Facebook' />
+            <ListItemText primary="Facebook" />
           </MenuItem>
 
           {/* Menu item for sharing on Twitter */}
-          <MenuItem button id='twitter' onClick={handleShare}>
+          <MenuItem button id="twitter" onClick={handleShare}>
             <ListItemIcon>
               <TwitterIcon />
             </ListItemIcon>
-            <ListItemText primary='Twitter' />
+            <ListItemText primary="Twitter" />
           </MenuItem>
 
           {/* Menu item for sharing on Reddit */}
-          <MenuItem button id='reddit' onClick={handleShare}>
+          <MenuItem button id="reddit" onClick={handleShare}>
             <ListItemIcon>
               <RedditIcon />
             </ListItemIcon>
-            <ListItemText primary='Reddit' />
+            <ListItemText primary="Reddit" />
           </MenuItem>
 
           {/* Menu item for copying the link */}
-          <MenuItem button id='copy' onClick={handleShare}>
+          <MenuItem button id="copy" onClick={handleShare}>
             <ListItemIcon>
               <LinkIcon />
             </ListItemIcon>
-            <ListItemText primary='Copy Link' />
+            <ListItemText primary="Copy Link" />
           </MenuItem>
         </MenuList>
       </Menu>
     </>
   );
 }
-
-  
