@@ -1,17 +1,18 @@
 {
-  "main.css": "/Fit-Buddy/static/css/main.c0054f87.chunk.css",
-  "main.js": "/Fit-Buddy/static/js/main.9793c253.chunk.js",
-  "main.js.map": "/Fit-Buddy/static/js/main.9793c253.chunk.js.map",
+  "main.css": "/Fit-Buddy/static/css/main.b8a7292d.chunk.css",
+  "main.js": "/Fit-Buddy/static/js/main.039f37bb.chunk.js",
+  "main.js.map": "/Fit-Buddy/static/js/main.039f37bb.chunk.js.map",
   "runtime~main.js": "/Fit-Buddy/static/js/runtime~main.5ad5c129.js",
   "runtime~main.js.map": "/Fit-Buddy/static/js/runtime~main.5ad5c129.js.map",
   "static/css/2.57d4d99a.chunk.css": "/Fit-Buddy/static/css/2.57d4d99a.chunk.css",
-  "static/js/2.f81adeb0.chunk.js": "/Fit-Buddy/static/js/2.f81adeb0.chunk.js",
-  "static/js/2.f81adeb0.chunk.js.map": "/Fit-Buddy/static/js/2.f81adeb0.chunk.js.map",
+  "static/js/2.2c475e80.chunk.js": "/Fit-Buddy/static/js/2.2c475e80.chunk.js",
+  "static/js/2.2c475e80.chunk.js.map": "/Fit-Buddy/static/js/2.2c475e80.chunk.js.map",
   "index.html": "/Fit-Buddy/index.html",
-  "precache-manifest.9f615b1c8730bd6a08d3c365f714513a.js": "/Fit-Buddy/precache-manifest.9f615b1c8730bd6a08d3c365f714513a.js",
+  "precache-manifest.438ade6d7363fdf01fb93ef0ab3ede33.js": "/Fit-Buddy/precache-manifest.438ade6d7363fdf01fb93ef0ab3ede33.js",
   "service-worker.js": "/Fit-Buddy/service-worker.js",
   "static/css/2.57d4d99a.chunk.css.map": "/Fit-Buddy/static/css/2.57d4d99a.chunk.css.map",
-  "static/css/main.c0054f87.chunk.css.map": "/Fit-Buddy/static/css/main.c0054f87.chunk.css.map",
+  "static/css/main.b8a7292d.chunk.css.map": "/Fit-Buddy/static/css/main.b8a7292d.chunk.css.map",
   "static/media/App.css": "/Fit-Buddy/static/media/fa-v4compatibility.f20773a7.woff2",
-  "static/media/home.jpg": "/Fit-Buddy/static/media/home.2b5a4a85.jpg"
+  "static/media/home.jpg": "/Fit-Buddy/static/media/home.2b5a4a85.jpg",
+  "static/media/workoutt.jpg": "/Fit-Buddy/static/media/workoutt.27274a26.jpg"
 }
