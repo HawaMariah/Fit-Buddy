@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "cc8bf07dabdd06663936",
+    "revision": "334e56fc7bd76f34aef8",
     "url": "/Fit-Buddy/static/css/main.b8a7292d.chunk.css"
   },
   {
-    "revision": "cc8bf07dabdd06663936",
-    "url": "/Fit-Buddy/static/js/main.81d1e296.chunk.js"
+    "revision": "334e56fc7bd76f34aef8",
+    "url": "/Fit-Buddy/static/js/main.aca16c9a.chunk.js"
   },
   {
     "revision": "d95e7737f7a9b4b30ab9",
     "url": "/Fit-Buddy/static/js/runtime~main.5ad5c129.js"
   },
   {
-    "revision": "02a60511043079095390",
+    "revision": "95ad05836849cf1c2d68",
     "url": "/Fit-Buddy/static/css/2.57d4d99a.chunk.css"
   },
   {
-    "revision": "02a60511043079095390",
-    "url": "/Fit-Buddy/static/js/2.2c475e80.chunk.js"
+    "revision": "95ad05836849cf1c2d68",
+    "url": "/Fit-Buddy/static/js/2.3485e64a.chunk.js"
   },
   {
     "revision": "005c9aa92b564b73b7582cc4f1fa49cb",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/Fit-Buddy/static/media/fa-v4compatibility.f20773a7.woff2"
   },
   {
-    "revision": "58f1253e5639d508a6fe310c97327f82",
-    "url": "/Fit-Buddy/static/media/fa-v4compatibility.58f1253e.ttf"
-  },
-  {
     "revision": "d5e647388e2415268b700d3df2e30a0d",
     "url": "/Fit-Buddy/static/media/fa-solid-900.d5e64738.woff2"
+  },
+  {
+    "revision": "58f1253e5639d508a6fe310c97327f82",
+    "url": "/Fit-Buddy/static/media/fa-v4compatibility.58f1253e.ttf"
   },
   {
     "revision": "0248ab19e74fc3731de14d647db4687a",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/Fit-Buddy/static/media/workoutt.27274a26.jpg"
   },
   {
-    "revision": "062c799b7138dfed7db75af2cc80040b",
+    "revision": "2a359861d1fe71e3204b381f330bbdde",
     "url": "/Fit-Buddy/index.html"
   }
 ];
