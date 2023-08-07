@@ -1,21 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 import Homepage from "./Homepage";
 import Login from "./Login";
 import Signup from "./Signup";
 import "./App.css";
 import SelectFitType from "./SelectFitType";
 import Hero from "./Hero";
-import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+
 import Articles from "./Articles";
 
 function App() {
   return (
     <>
-      <Navbar />
+    <Navbar />
       <Sidebar />
+     
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/login" element={<Login />} />

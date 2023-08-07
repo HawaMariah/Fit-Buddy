@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Swal from "sweetalert2";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-
-  useEffect(() => {
-    if (showSuccessAlert) {
-      window.location.href = "/";
-    }
-  }, [showSuccessAlert]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,10 +19,6 @@ const Login = () => {
         icon: "success",
         title: "Success!",
         text: "You have successfully logged in.",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          setShowSuccessAlert(true);
-        }
       });
 
       setEmail("");
@@ -41,7 +30,7 @@ const Login = () => {
     <>
       <div className="form-container">
         <form className="form-login" onSubmit={handleSubmit}>
-          <label htmlFor="email">email :</label>
+          <label htmlFor="email">Email:</label>
           <input
             value={email}
             type="email"
@@ -51,7 +40,7 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <label htmlFor="password">password :</label>
+          <label htmlFor="password">Password:</label>
           <input
             value={password}
             type="password"

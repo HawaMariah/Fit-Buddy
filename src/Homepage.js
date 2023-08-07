@@ -15,6 +15,7 @@ const Homepage = () => {
 
   return (
     <div className="homepage">
+      
       <div className="home-top">
         <div className="image-container">
           <div className="image-hover-effect">
@@ -82,6 +83,7 @@ const Homepage = () => {
           <YouTubeVideo key={index} videoUrl={url} />
         ))}
       </div>
+    
     </div>
   );
 };

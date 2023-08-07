@@ -34,12 +34,7 @@ const Signup = () => {
         icon: "success",
         title: "Success!",
         text: "You have successfully signed up.",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          
-          window.location.href = "/login"; 
-        }
-      });
+      })
     }
   };
 
