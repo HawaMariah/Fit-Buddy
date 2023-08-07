@@ -32,7 +32,7 @@ function Hero() {
     const exerciseOptions = {
       method: "GET",
       headers: {
-        'X-RapidAPI-Key': '5923753061msh596e55cd59ef3b9p1865e7jsn90da2ddb36ab',
+        'X-RapidAPI-Key': '4775815e67mshc097fde60a2e6efp10d7dcjsn3932af6189ec',
         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
       },
     };
