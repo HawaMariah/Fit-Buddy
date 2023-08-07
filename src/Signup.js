@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-
+import { Link } from "react-router-dom";
 const Signup = () => {
   const [firstName, setFirstName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [isConfirmed, setIsConfirmed] = useState(false);
 
   const handleSignup = (e) => {
     e.preventDefault();
@@ -23,8 +24,6 @@ const Signup = () => {
         text: "Passwords do not match.",
       });
     } else {
-      
-
       setFirstName("");
       setUsername("");
       setPassword("");
@@ -34,56 +33,66 @@ const Signup = () => {
         icon: "success",
         title: "Success!",
         text: "You have successfully signed up.",
-      })
+      }).then(() => {
+        setIsConfirmed(true); // Set the isConfirmed state to true after SweetAlert is confirmed
+      });
     }
   };
 
+  
+
   return (
     <>
-      <div className="form-containerr">
-        <form className="form-signup" onSubmit={handleSignup}>
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            value={firstName}
-            type="text"
-            placeholder="Enter your first name"
-            id="firstName"
-            name="firstName"
-            onChange={(e) => setFirstName(e.target.value)}
-          />
+      <div className="form-container">
+      {isConfirmed ? (
+          <div className="go-back-container">
+            <Link className="go-back"  to="/">Go Back</Link>
+          </div>
+        ) : (
+          <form className="form-signup" onSubmit={handleSignup}>
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              value={firstName}
+              type="text"
+              placeholder="Enter your first name"
+              id="firstName"
+              name="firstName"
+              onChange={(e) => setFirstName(e.target.value)}
+            />
 
-          <label htmlFor="username">Username:</label>
-          <input
-            value={username}
-            type="text"
-            placeholder="Enter your username"
-            id="username"
-            name="username"
-            onChange={(e) => setUsername(e.target.value)}
-          />
+            <label htmlFor="username">Username:</label>
+            <input
+              value={username}
+              type="text"
+              placeholder="Enter your username"
+              id="username"
+              name="username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
 
-          <label htmlFor="password">Password:</label>
-          <input
-            value={password}
-            type="password"
-            placeholder="Enter your password"
-            id="password"
-            name="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+            <label htmlFor="password">Password:</label>
+            <input
+              value={password}
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
-          <label htmlFor="confirmPassword">Confirm Password:</label>
-          <input
-            value={confirmPassword}
-            type="password"
-            placeholder="Confirm your password"
-            id="confirmPassword"
-            name="confirmPassword"
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              value={confirmPassword}
+              type="password"
+              placeholder="Confirm your password"
+              id="confirmPassword"
+              name="confirmPassword"
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
 
-          <button type="submit">Sign Up</button>
-        </form>
+            <button type="submit">Sign Up</button>
+          </form>
+        )}
       </div>
     </>
   );
